@@ -165,7 +165,7 @@
 		 }
 
 		 function getBandwidthCapacity() {
-			 ajax("/api/bandwidth-capacity", function(r) {
+			 ajax("/api/bandwidth-capacity-kbps", function(r) {
 				 document.getElementById("bandwidth-capacity").innerHTML = parseInt(r);
 			 });
 		 }
@@ -433,7 +433,7 @@
 				<li class="endpoint"><a href="/api/traffic-ops-uri">/api/traffic-ops-uri</a></li>
 				<li class="endpoint"><a href="/api/cache-statuses">/api/cache-statuses</a></li>
 				<li class="endpoint"><a href="/api/bandwidth-kbps">/api/bandwidth-kbps</a></li>
-				<li class="endpoint"><a href="/api/bandwidth-capacity">/api/bandwidth-capacity</a></li>
+				<li class="endpoint"><a href="/api/bandwidth-capacity-kbps">/api/bandwidth-capacity-kbps</a></li>
 			</ul>
 		</div>
 
